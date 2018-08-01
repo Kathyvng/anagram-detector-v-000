@@ -7,9 +7,9 @@ class Anagram
     @word = word
   end
 
-  def match(some_word)
+  def match(array)
     anagrams = []
-    some_word.each do |x|
+    array.each do |x|
       if x.split(" ").sort == @word.split(" ").sort}
         anagrams << x
       else
