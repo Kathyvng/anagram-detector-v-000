@@ -7,9 +7,9 @@ class Anagram
     @word = word
   end
 
-  def match
+  def match(some_word)
     new_word = []
-    new_word.each do |x| 
+    some_word.each do |x|
       new_word << x if x.split("").sort == @word.split("").sort}
   end
 end
